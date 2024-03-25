@@ -30,13 +30,19 @@ int main(){
 
     int numeroDeTentativas;
 
-    if(nivel == 1){
+    switch (nivel)
+    {
+    case 1:
         numeroDeTentativas = 20;
-    } else if (nivel == 2){
+        break;
+    case 2:
         numeroDeTentativas = 10;
-    } else if (nivel == 3){
+        break;   
+    default:
         numeroDeTentativas = 5;
+        break;
     }
+
     
     for (int i = 1; i <= numeroDeTentativas; i++){
     
